@@ -19,6 +19,7 @@ module.exports = merge(common, {
   resolve: {
     alias: {
       '@app': path.resolve(__dirname, 'src/'),
+      '@selectors': path.resolve(__dirname, 'src/selectors/'),
     },
     extensions: ['.js', '.jsx'],
   },
