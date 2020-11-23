@@ -1,0 +1,3 @@
+export const SET_ITEMS_LIST = 'SET_ITEMS_LIST';
+export const ADD_LIST_ITEM = 'ADD_LIST_ITEM';
+export const ADD_ITEM_REVIEW = 'ADD_ITEM_REVIEW';

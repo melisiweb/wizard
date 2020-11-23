@@ -1,3 +1,11 @@
-export const getIterableList = (list = {}) => {
-  return Object.values(list);
+/**
+ *
+ * @param {$.Items.List} list
+ */
+export const getIterableList = (list) => {
+  if (list) {
+    return Object.values(list);
+  }
+
+  return [];
 };
