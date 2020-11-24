@@ -5,6 +5,8 @@ import * as types from '@app/actions/items/types';
  */
 const initialState = {
   list: null,
+  current: null,
+  review: null,
 };
 
 /**
@@ -20,30 +22,20 @@ const reducers = (state = initialState, { type, payload }) => {
         list: payload,
       };
 
-    case types.ADD_LIST_ITEM: {
-      const list = state.list || {};
+    case types.SET_CURRENT_ITEM: {
 
       return {
         ...state,
-        list: {
-          ...list,
-          [payload.id]: payload,
-        },
+        current: payload,
       };
     }
-    case types.ADD_ITEM_REVIEW: {
-      const list = state.list || {};
+
+    case types.SET_REVIEW: {
       return {
         ...state,
-        list: {
-          ...list,
-          [payload.itemId]: {
-            ...list[payload.itemId],
-            reviews: {
-              ...list[payload.itemId].reviews,
-              [payload.review.id]: payload.review,
-            },
-          },
+        review: {
+          ...state.review,
+          ...payload,
         },
       };
     }

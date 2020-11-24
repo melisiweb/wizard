@@ -1,13 +1,4 @@
-/** @type {$.Items.List} */
-const items = {
-  1: {
-    id: 1,
-    title: 'Item title',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-    shortDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-    reviews: {},
-  },
-};
+import { itemsList } from './db';
 
 /**
  * @param {boolean} hasError
@@ -21,7 +12,7 @@ export const getItems = (hasError = false, delay = 2000) => {
         reject();
       }
 
-      resolve(items);
+      resolve(itemsList);
     }, delay);
   });
 };
@@ -39,7 +30,48 @@ export const getItem = (itemId, hasError = false, delay = 2000) => {
         reject();
       }
 
-      resolve(items[itemId]);
+      if (itemsList) {
+        resolve(itemsList.find(item => item.id === parseInt(itemId, 10)));
+      }
+
+      resolve(null);
+    }, delay);
+  });
+};
+
+/**
+ * @param {$.Reviews.ReviewPayload} review
+ * @param {boolean} hasError
+ * @param {number} delay
+ * @returns {Promise<$.Reviews.ReviewPayload>}
+ */
+export const createReview = (review, hasError = false, delay = 2000) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (hasError) {
+        reject();
+      }
+
+      review.id = Math.floor(Math.random() * 1000) + 1;
+      resolve(review);
+    }, delay);
+  });
+};
+
+/**
+ * @param {$.Reviews.ReviewPayload} review
+ * @param {boolean} hasError
+ * @param {number} delay
+ * @returns {Promise<$.Reviews.ReviewPayload>}
+ */
+export const updateReview = (review, hasError = false, delay = 2000) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (hasError) {
+        reject();
+      }
+
+      resolve(review);
     }, delay);
   });
 };

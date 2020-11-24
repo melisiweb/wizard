@@ -11,7 +11,15 @@ export const setItemsList = (list) => ({
 /**
  * @param {$.Items.Item} item
  */
-export const addListItem = (item) => ({
-  type: types.ADD_LIST_ITEM,
+export const setCurrentItem = (item) => ({
+  type: types.SET_CURRENT_ITEM,
   payload: item,
+});
+
+/**
+ * @param {$.Reviews.ReviewPayload} review
+ */
+export const setReview = (review) => ({
+  type: types.SET_REVIEW,
+  payload: review,
 });

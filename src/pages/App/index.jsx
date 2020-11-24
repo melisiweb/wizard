@@ -4,7 +4,7 @@ import Home from '@app/pages/Home';
 import Items from '@app/pages/Items';
 import ItemDetails from '@app/pages/ItemDetails';
 import Reviews from '@app/pages/Reviews';
-import ReviewDetails from '@app/pages/ReviewDetails';
+import ReviewEdit from '@app/pages/ReviewEdit';
 import NotFound from '@app/pages/NotFound';
 import ReviewCreate from '@app/pages/ReviewCreate';
 import { globals } from './styles';
@@ -17,8 +17,8 @@ const App = () => {
       <Switch>
         <Route path='/' exact><Home /></Route>
 
-        <Route path='/items/:itemId/reviews/create/:stepId?'><ReviewCreate /></Route>
-        <Route path='/items/:itemId/reviews/:reviewId'><ReviewDetails /></Route>
+        <Route path='/items/:itemId/reviews/:reviewId/edit/:stepId?'><ReviewEdit /></Route>
+        <Route path='/items/:itemId/reviews/create/'><ReviewCreate /></Route>
         <Route path='/items/:itemId/reviews'><Reviews /></Route>
         <Route path='/items/:itemId/'><ItemDetails /></Route>
         <Route path='/items/'><Items /></Route>

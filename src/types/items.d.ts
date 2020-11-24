@@ -1,23 +1,21 @@
-export interface ListObject {
-  [key: string]: Item
-}
-
-export type List = ListObject | null;
-
+export type List = Array<ItemPayload> | null;
 export interface State {
   list: List
+  current: Item,
+  review: $.Reviews.Review,
 }
 
-export interface Item {
+export interface ItemPayload {
   id: string | number,
   title: string,
   description: string,
   shortDescription: string
   reviews: any
 }
+export type Item = ItemPayload | null
 
 export interface ItemCardProps {
-  item: Item | null
+  item: Item
   isDetailView?: boolean
 }
 

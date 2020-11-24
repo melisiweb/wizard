@@ -12,7 +12,8 @@ export const globals = css`
     }
 
     body {
-      font-family: Century Gothic, Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #444;
     }
 
     *,
@@ -20,6 +21,29 @@ export const globals = css`
     *:after {
       box-sizing: inherit;
     }
+  }
+
+
+  p {
+    line-height: 1.5;
+  }
+
+  textarea,
+  input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+
+    &:focus,
+    &:hover {
+      border-color: black;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 200px;
   }
 
   .container {
@@ -32,6 +56,10 @@ export const globals = css`
   .flex-center {
     display: flex;
     align-items: center;
+  }
+
+  .hide {
+    display: none;
   }
 
   ul, li {
