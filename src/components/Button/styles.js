@@ -19,6 +19,10 @@ const buttonStyle = {
 export const Wrapper = styled.button`
   ${buttonStyle}
 
+  &:disabled {
+    cursor: default;
+  }
+
   &.unstyled {
     background-color: transparent;
     padding: 0;
