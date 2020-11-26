@@ -18,7 +18,7 @@ export const MenuLink = styled(NavLink)`
   text-decoration: none;
   color: #919D9D;
   font-weight: normal;
-  padding: 20px 8px;
+  padding: var(--medium-space) var(--small-space);
   display: block;
 
   &.active {

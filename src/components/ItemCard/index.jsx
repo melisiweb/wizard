@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import * as Styled from './styles';
 
 /**
@@ -14,7 +13,7 @@ const ItemCard = (props) => {
 
   return (
     <Styled.Wrapper>
-      <h2><Link to={`/items/${item.id}`}>{item.title}</Link></h2>
+      <h2><Styled.StyledLink to={`/items/${item.id}`}>{item.title}</Styled.StyledLink></h2>
       <p>{isDetailView ? item.description : item.shortDescription}</p>
     </Styled.Wrapper>
   );

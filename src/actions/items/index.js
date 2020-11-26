@@ -17,7 +17,7 @@ export const setCurrentItem = (item) => ({
 });
 
 /**
- * @param {$.Reviews.ReviewPayload} review
+ * @param {$.Reviews.Review} review
  */
 export const setReview = (review) => ({
   type: types.SET_REVIEW,

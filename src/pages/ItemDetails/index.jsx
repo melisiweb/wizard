@@ -1,6 +1,7 @@
 import { setCurrentItem } from '@app/actions/items';
 import Button from '@app/components/Button';
 import ItemCard from '@app/components/ItemCard';
+import Loading from '@app/components/Loading';
 import { getItem } from '@app/endpoints';
 import { getCurrent } from '@app/selectors/items';
 import React, { useEffect, useRef, useState } from 'react';
@@ -20,7 +21,7 @@ const ItemDetails = () => {
 
   const getTemplate = () => {
     if (loading) {
-      return <div>Loading...</div>;
+      return <Loading />;
     }
 
     if (error) {

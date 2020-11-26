@@ -6,16 +6,22 @@ export interface ReviewImage {
 export interface ReviewPayload {
   id?: number,
   title: string,
-  rating: number | string,
+  rating: number,
   description: string,
   image: ReviewImage,
   date: string,
 }
 
 export interface ReviewFormProps {
-  itemId: number | string,
-  stepId: number | string,
+  itemId: number,
+  stepId: number,
   review: Review,
+}
+
+export interface RatingFieldProps {
+  rating: number,
+  readOnly?: boolean,
+  setRating?: function,
 }
 
 export type Review = ReviewPayload | null

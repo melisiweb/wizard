@@ -5,6 +5,7 @@ import { getList } from '@selectors/items';
 import ItemCard from '@app/components/ItemCard';
 import { getItems } from '@app/endpoints';
 import { setItemsList } from '@app/actions/items';
+import Loading from '@app/components/Loading';
 
 const Items = () => {
   const isMountedRef = useRef(false);
@@ -14,7 +15,7 @@ const Items = () => {
   const dispatch = useDispatch();
   const getTemplate = () => {
     if (loading) {
-      return <div>Loading...</div>;
+      return <Loading />;
     }
 
     if (error) {
@@ -61,6 +62,8 @@ const Items = () => {
   return (
     <Styled.Wrapper>
       <div className="container">
+        <h1>Items</h1>
+        <p>Here is a list of items</p>
         {getTemplate()}
       </div>
     </Styled.Wrapper>

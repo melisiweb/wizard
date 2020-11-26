@@ -5,7 +5,8 @@ const Home = () => {
   return (
     <Styled.Wrapper>
       <div className='container'>
-        Home
+        <h1>Home</h1>
+        <p>Welcome to Review Wizard!</p>
       </div>
     </Styled.Wrapper>
   );

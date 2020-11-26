@@ -11,7 +11,9 @@
   "globals": {
     "__dirname": "readonly",
     "module": "readonly",
-    "require": "readonly"
+    "require": "readonly",
+    "test": "readonly",
+    "expect": "readonly"
   },
   "parserOptions": {
     "ecmaFeatures": {

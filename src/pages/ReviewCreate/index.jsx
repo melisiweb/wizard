@@ -12,6 +12,8 @@ const ReviewCreate = () => {
   return (
     <Styled.Wrapper>
       <div className='container'>
+        <h1>Create a review</h1>
+        <p>Fill the form to create the review!</p>
         <ReviewForm stepId={1} itemId={itemId} review={review}  />
       </div>
     </Styled.Wrapper>

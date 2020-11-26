@@ -4,8 +4,34 @@ import { normalize } from 'polished';
 
 export const globals = css`
   :global() {
-
    ${normalize()}
+
+    :root {
+      --border-radius: 4px;
+      --small-space: 8px;
+      --medium-space: 12px;
+      --big-space: 20px;
+      --min-height: 100px;
+      --max-width: 974px;
+      --buttons-font-size: 14px;
+
+      --success-color: #9acd32;
+      --links-color: #008aed;
+      --links-color-hover: #0182de;
+      --dark-grey: #444;
+      --medium-grey: #999;
+      --light-grey: #ccc;
+    }
+
+    @media screen and (min-width: 600px) {
+      :root {
+        --small-space: 8px;
+        --medium-space: 20px;
+        --big-space: 40px;
+        --min-height: 200px;
+        --buttons-font-size: 16px;
+      }
+    }
 
     html {
       box-sizing: border-box;
@@ -13,7 +39,7 @@ export const globals = css`
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #444;
+      color: var(--dark-grey);
     }
 
     *,
@@ -30,8 +56,8 @@ export const globals = css`
 
   textarea,
   input[type="text"] {
-    padding: 8px;
-    border: 1px solid #ccc;
+    padding: var(--small-space);
+    border: 1px solid var(--light-grey);
     border-radius: 4px;
     outline: none;
 
@@ -43,14 +69,14 @@ export const globals = css`
 
   textarea {
     resize: vertical;
-    min-height: 200px;
+    min-height: var(--min-height);
   }
 
   .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 974px;
-    padding: 0 20px
+    max-width: var(--max-width);
+    padding: 0 var(--medium-space);
   }
 
   .flex-center {

@@ -6,16 +6,62 @@ export const Wrapper = styled.div`
 
 export const Form = styled.form`
   background-color: #f2f2f2;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   padding: 16px;
+
+  .image-upload-container {
+    min-height: var(--min-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 80px;
+
+    &.has-file {
+      span {
+        display: none;
+      }
+
+      svg {
+        fill: var(--success-color);
+      }
+    }
+
+    svg {
+      width: 80px;
+      margin: var(--big-space);
+    }
+  }
+
+
+  .form-group {
+    &--with-file {
+      @media screen and (min-width: 600px) {
+        display: flex;
+
+        label:first-child {
+          width: 30%;
+        }
+      }
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
 
   label {
     display: flex;
     flex-direction: column;
     margin-bottom: 32px;
+    width: 100%;
+
+    &.with-file {
+      flex-direction: row;
+    }
 
     input, textarea {
-      margin-top: 8px;
+      margin-top: var(--small-space);
     }
   }
 `;
@@ -23,6 +69,7 @@ export const Form = styled.form`
 export const Steps = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 32px 0;
 `;
 
@@ -30,7 +77,7 @@ export const Step = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ccc;
+  background-color: var(--light-grey);
   font-size: 24px;
   color: white;
   height: 40px;
@@ -52,7 +99,7 @@ export const Step = styled.div`
   &:after {
     content: "";
     position: absolute;
-    background-color: #ccc;
+    background-color: var(--light-grey);
     top: 20px;
     right: 0;
     left: 100%;
@@ -61,10 +108,10 @@ export const Step = styled.div`
   }
 
   &.active {
-    background-color: #9acd32;
+    background-color: var(--success-color);
 
     &:after {
-      background-color: #9acd32;
+      background-color: var(--success-color);
     }
   }
 `;
@@ -72,17 +119,30 @@ export const Step = styled.div`
 export const Actions = styled.div`
   display: flex;
   justify-content: flex-end;
+  margin-top: 16px;
+
+  button {
+    margin-left: var(--small-space);
+  }
+`;
+
+export const Error = styled.div`
+  margin-bottom: var(--medium-space);
+  color: #fe6c6c;
+  padding: var(--small-space);
+  border-radius: var(--border-radius);
+  background-color: #ffd4d4;
 `;
 
 export const Stars = styled.div`
-  margin-top: 8px;
+  margin-top: var(--small-space);
 `;
 
 export const Star = styled.svg`
   fill: white;
-  stroke: #ccc;
+  stroke: var(--light-grey);
   stroke-width: 1px;
-  margin-right: 8px;
+  margin-right: var(--small-space);
 
   &.active {
     fill: #008aed;
@@ -93,15 +153,20 @@ export const Star = styled.svg`
 export const Card = styled.div`
   display: flex;
   background-color: #f2f2f2;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   padding: 16px;
+  flex-direction: column-reverse;
 
   > div {
     flex: 1;
+  }
+
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
   }
 `;
 
 export const CardImageContainer = styled.div`
   max-width: 250px;
-  margin-right: 20px;
+  margin-right: var(--medium-space);
 `;

@@ -1,12 +1,12 @@
 import React from 'react';
 import * as Styled from './styles';
 
-const Reviews = () => {
+const Loading = () => {
   return (
     <Styled.Wrapper>
-      Reviews
+      Loading...
     </Styled.Wrapper>
   );
 };
 
-export default Reviews;
+export default Loading;

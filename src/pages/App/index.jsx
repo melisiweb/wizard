@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom';
 import Home from '@app/pages/Home';
 import Items from '@app/pages/Items';
 import ItemDetails from '@app/pages/ItemDetails';
-import Reviews from '@app/pages/Reviews';
 import ReviewEdit from '@app/pages/ReviewEdit';
 import NotFound from '@app/pages/NotFound';
 import ReviewCreate from '@app/pages/ReviewCreate';
@@ -19,7 +18,6 @@ const App = () => {
 
         <Route path='/items/:itemId/reviews/:reviewId/edit/:stepId?'><ReviewEdit /></Route>
         <Route path='/items/:itemId/reviews/create/'><ReviewCreate /></Route>
-        <Route path='/items/:itemId/reviews'><Reviews /></Route>
         <Route path='/items/:itemId/'><ItemDetails /></Route>
         <Route path='/items/'><Items /></Route>
 

@@ -1,0 +1,329 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewForm renders 1`] = `
+Array [
+  <div
+    className="wch7iw8"
+  >
+    <div
+      className="s1tzrodn"
+    >
+      <div
+        className="active su8rkck"
+      >
+        1
+      </div>
+      <div
+        className="su8rkck"
+      >
+        2
+      </div>
+      <div
+        className="su8rkck"
+      >
+        3
+      </div>
+      <div
+        className="su8rkck"
+      >
+        4
+      </div>
+    </div>
+    <form
+      className="f17nxq3l"
+    >
+      <label>
+        <span>
+          Title
+        </span>
+        <input
+          name="title"
+          onChange={[Function]}
+          placeholder="Title"
+          type="text"
+          value=""
+        />
+      </label>
+      <label>
+        <span>
+          Rating
+        </span>
+        <div
+          className="s1s2xztc"
+        >
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <input
+            className="hide"
+            name="rating"
+            placeholder="Rating"
+            readOnly={true}
+            type="text"
+            value={0}
+          />
+        </div>
+      </label>
+      <div
+        className="a10tppnk"
+      >
+        <button
+          className="w1edcfhi"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Save and Continue
+        </button>
+      </div>
+    </form>
+  </div>,
+  ",",
+]
+`;
+
+exports[`ReviewForm renders 2`] = `
+Array [
+  <div
+    className="wch7iw8"
+  >
+    <div
+      className="s1tzrodn"
+    >
+      <div
+        className="active su8rkck"
+      >
+        1
+      </div>
+      <div
+        className="su8rkck"
+      >
+        2
+      </div>
+      <div
+        className="su8rkck"
+      >
+        3
+      </div>
+      <div
+        className="su8rkck"
+      >
+        4
+      </div>
+    </div>
+    <form
+      className="f17nxq3l"
+    >
+      <label>
+        <span>
+          Title
+        </span>
+        <input
+          name="title"
+          onChange={[Function]}
+          placeholder="Title"
+          type="text"
+          value=""
+        />
+      </label>
+      <label>
+        <span>
+          Rating
+        </span>
+        <div
+          className="s1s2xztc"
+        >
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <button
+            className="unstyled w1edcfhi"
+            onClick={[Function]}
+            type="button"
+          >
+            <svg
+              className="sno38e2"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"
+              />
+            </svg>
+          </button>
+          <input
+            className="hide"
+            name="rating"
+            placeholder="Rating"
+            readOnly={true}
+            type="text"
+            value={0}
+          />
+        </div>
+      </label>
+      <div
+        className="a10tppnk"
+      >
+        <button
+          className="w1edcfhi"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Save and Continue
+        </button>
+      </div>
+    </form>
+  </div>,
+  ",",
+]
+`;

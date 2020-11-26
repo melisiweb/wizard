@@ -31,12 +31,11 @@ const reducers = (state = initialState, { type, payload }) => {
     }
 
     case types.SET_REVIEW: {
+      const review = payload ? { ...state.review, ...payload } : null;
+
       return {
         ...state,
-        review: {
-          ...state.review,
-          ...payload,
-        },
+        review,
       };
     }
 
