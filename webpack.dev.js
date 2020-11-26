@@ -10,7 +10,7 @@ module.exports = merge(common, {
     hot: true,
     compress: false,
     historyApiFallback: true,
-    port: '8085',
+    port: 8085,
   },
   watch: true,
   watchOptions: {

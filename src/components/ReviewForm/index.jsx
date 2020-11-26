@@ -211,7 +211,7 @@ const ReviewForm = ({ stepId, itemId, review }) => {
           </label>
 
           <label>
-            <span>Description</span>
+            <span>Image Description</span>
             <textarea placeholder='Write an image description...' name='imageDescription' onChange={ev => setImageDescription(ev.target.value)} value={imageDescription} />
           </label>
         </div>}

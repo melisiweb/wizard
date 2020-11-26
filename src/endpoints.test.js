@@ -16,7 +16,7 @@ test('getItems returns a list of items', () => {
     expect(data).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
-          title: 'Item title',
+          title: 'Long title for an item of the review wizard',
         }),
       ]),
     );
